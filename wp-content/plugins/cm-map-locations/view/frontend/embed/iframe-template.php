@@ -1,0 +1,1 @@
+<iframe src="<?php echo esc_attr($url); ?>" style="width:100%;height:500px;border:solid 1px black;"></iframe>

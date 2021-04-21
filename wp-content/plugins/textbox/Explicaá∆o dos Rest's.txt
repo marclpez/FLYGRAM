@@ -1,0 +1,51 @@
+-- COMO FUNCIONA --
+
+O Wordpress já tem integrado a ele um sistema de controle de requests.
+Para executar o request desejado, envie no campo action do header a ação pré-definida.
+
+Os requests devem ser do tipo POST.
+
+1) Para buscar a lista de USUÁRIOS, envie os seguintes dados:
+* POST['action'] = 'textbox_get_user_list'
+* POST['token'] = TOKEN_DO_BLOG
+
+2) Para buscar a lista de CATEGORIAS, envie os seguintes dados:
+* POST['action'] = 'textbox_get_category_list'
+* POST['token'] = TOKEN_DO_BLOG
+
+3) Para inserir um POST, envie os seguintes dados:
+* POST['action'] = 'textbox_add_post'
+* POST['token'] = TOKEN_DO_BLOG
+* POST['post_title'] = // Título do post
+* POST['post_content'] = // Conteúdo do post
+* POST['post_author'] = // Id do usuário
+POST['post_name'] = // Slug, parte da url amigável
+POST['post_excerpt'] = // Resumo do post
+POST['post_status'] = // [ 'draft' | 'publish' | 'pending'| 'future' | 'private' ] Padrão é 'draft'
+POST['post_date'] = // Format [Y-m-d H:i:s]
+POST['comment_status'] = // [ 'open' | 'closed' ] / Padrão é o que está configurado no blog
+POST['post_category'] = // Id das categorias separadas por vírgula
+POST['tags_input'] = // Tags separadas por vírgula
+
+Ps: Apenas os campos com * são obrigatórios.
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+-- RESPOSTAS DOS REQUESTS --
+
+Todos os requests retornam um JSON com os seguintes campos:
+JSON['statusCode'] = // Um code da resposta, para poder saber o que está havendo, segue abaixo uma relação dos statusCode's
+JSON['message'] = // Mensagem de erro, apenas quando possui erro
+JSON['id_post'] = // Id do post criado, apenas no sucesso do request de criaçao de post
+JSON['error'] = // Erro inesperado ou do WP, apenas quando der erro na criação de post
+
+/**
+ * Status Code List
+ * 1 - Sucesso
+ * 2 - Token vazio
+ * 3 - Token não configurado
+ * 4 - Token inválido
+ * 5 - Campo(s) obrigatório(s) não preenchido(s)
+ * 6 - Usuário não existente
+ * 7 - Categoria não existente
+ */

@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Images with GPS-Data and GPX on Maps\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-08 20:36+0000\n"
+"PO-Revision-Date: 2020-02-08 20:42+0000\n"
+"Last-Translator: admin <se_ro@bluewin.ch>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.3.1; wp-5.3.3-alpha-47137"
+
+#: admin_geoImageAndGPX.php:6
+msgid "geoImgGPX administrieren"
+msgstr "geoImgGPX administrate"
+
+#: admin_geoImageAndGPX.php:24
+msgid "Settings Saved"
+msgstr "Settings Saved"
+
+#: admin_geoImageAndGPX.php:70 geoImgGPXMainAjaxRequest.php:82
+#: geoImgGPX_ShowShortCode.php:77
+msgid ""
+"Ihr Server unterstütz keine EXIF-Applikationen zum auslesen von GeoDaten. "
+"exif_read_data() ist deaktiviert und ExifTool ist nicht vorhanden oder der "
+"Pfad zu diesem stimmt nicht."
+msgstr ""
+"Your  server is  not supportingEXIF application to identify geo data.  Exif "
+"read data  () is not deactivated and EXIF  tool is not available or  the "
+"path to this is not  right"
+
+#: admin_geoImageAndGPX.php:72 geoImgGPXMainAjaxRequest.php:87
+msgid "Ihr Server unterstütz EXIF-Applikationen zum auslesen von GeoDaten:"
+msgstr ""
+"Your  server is  not supportingEXIF application to identify geo data.  "
+
+#: admin_geoImageAndGPX.php:75 geoImgGPXMainAjaxRequest.php:90
+msgid "- exif_read_data() funktioniert nicht."
+msgstr ""
+"- exif_read_data() it don´t works\n"
+
+#: admin_geoImageAndGPX.php:77 geoImgGPXMainAjaxRequest.php:92
+msgid ""
+"- exif_read_data()  funktioniert und extrahiert GPS Daten aus den Bildern."
+msgstr "- exif_read_data() works and extracts GPS data from the pictures"
+
+#: admin_geoImageAndGPX.php:81
+msgid "- ExifTool liefert folgenden Fehler: "
+msgstr "Exif Tool shows following  mistake:"
+
+#: admin_geoImageAndGPX.php:86
+msgid ""
+"- ExifTool ist nicht vorhanden oder der Pfad zu diesem stimmt nicht. Bitte "
+"passen sie den Pfad unter 'Wordpress Backend ==> Einstellungen ==> Image in "
+"GPS & GPX in Map' an. Erfragen Sie den Pfad bei Ihrem Server-Hosting-"
+"Anbieter."
+msgstr ""
+"-ExifTool is not available or  the path to this is not right.  Please adjust "
+" the path  under Wordpress Backend ==> settings ==> Image in GPS & GPX in "
+"Map' \n"
+"\n"
+"Ask your hoster for  the path"
+
+#: admin_geoImageAndGPX.php:88 geoImgGPXMainAjaxRequest.php:98
+msgid "- ExifTool funktioniert und extrahiert GPS Daten aus den Bildern."
+msgstr "- ExifTool works  and extracts GPS data from the pictures"
+
+#: admin_geoImageAndGPX.php:101
+msgid "Allgemein"
+msgstr ""
+"General\n"
+
+#: admin_geoImageAndGPX.php:108
+msgid "Google API Key:"
+msgstr "Google API Key:"
+
+#: admin_geoImageAndGPX.php:116
+msgid "ExifTool Path:"
+msgstr "ExifTool Path:"
+
+#: admin_geoImageAndGPX.php:124
+msgid "ExifTool Path Samples:"
+msgstr "ExifTool Path Samples:"
+
+#: admin_geoImageAndGPX.php:134
+msgid "Save Settings"
+msgstr "Save Settings"
+
+#: geoImgGPXMainAjaxRequest.php:85
+msgid "ShortCode für GeoImages in Ihrem Beitrag: [geoImg]"
+msgstr "Short code for geo images in your post : [geolmg]"
+
+#: geoImgGPXMainAjaxRequest.php:96
+msgid ""
+"- ExifTool ist nicht vorhanden oder der Pfad zu diesem stimmt nicht. Bitte "
+"passen sie den Pfad unter Einstellungen/Images in GPS an. Erfragen Sie den "
+"Pfad bei Ihrem Server-Hosting-Anbieter."
+msgstr ""
+"- ExifTool  is not available or  the path to this is not  right.  please  "
+"adjust the pathh  under  settings/images  in  GPS\n"
+"Ask your  hoster  for the  path"
+
+#: geoImgGPXMainAjaxRequest.php:159
+msgid "Click for close"
+msgstr "Click for close"
+
+#: geoImgGPXMainAjaxRequest.php:164
+msgid "GeoDaten vorhanden"
+msgstr "geo data available"
+
+#: geoImgGPXMainAjaxRequest.php:164 geoImgGPXMainAjaxRequest.php:166
+msgid "GPS-Daten edit: "
+msgstr "edit GPS data"
+
+#: geoImgGPXMainAjaxRequest.php:166
+msgid ""
+"Keine GeoDaten gefunden. Klicken sie auf diesen Button und geben Sie die "
+"Geodaten manuel ein."
+msgstr ""
+"No  geo data found.  Click on this buttom  and put in  the GEO data manual"
+
+#: geoImgGPXMainAjaxRequest.php:166
+msgid "Keine GeoDaten gefunden"
+msgstr "no geo data found"
+
+#: geoImgGPXMainAjaxRequest.php:169 geoImgGPX_ShowShortCode.php:188
+#: geoImgGPX_ShowShortCode.php:188
+msgid "Bild löschen"
+msgstr " delete picture:"
+
+#: geoImgGPXMainAjaxRequest.php:169 geoImgGPX_ShowShortCode.php:188
+msgid "Bild löschen: "
+msgstr "delete picture:"
+
+#: geoImgGPXMainAjaxRequest.php:176
+msgid "Keine Bilddaten gefunden"
+msgstr "No image data found"
+
+#: geoImgGPXMainAjaxRequest.php:185
+msgid "Dateien hinzufügen"
+msgstr "Add files"
+
+#: geoImgGPXMainAjaxRequest.php:190
+msgid "Refresh"
+msgstr "Refresh"
+
+#: geoImgGPXMainAjaxRequest.php:245
+msgid "GPS Position des Bildes auf der Karte ändern"
+msgstr "Changing GPS position of a picture on a card"
+
+#: geoImgGPXMainAjaxRequest.php:247
+msgid "close"
+msgstr "close"
+
+#: geoImgGPXMainAjaxRequest.php:249
+msgid "Verschieben Sie den Marker zu der richtigen Position"
+msgstr "move the marker to the  right position"
+
+#: geoImgGPXMainAjaxRequest.php:261 geoImgGPXMainAjaxRequest.php:265
+msgid "Geben Sie einen Numerischen Wert an. Erlaubte Werte: . 0-9 Bsp.: 48.345"
+msgstr "Put in an numerical value allowed value: 0-9 example: 48.345"
+
+#: geoImgGPXMainAjaxRequest.php:314
+msgid "Verschiebe mich zu der richtigen Position"
+msgstr "move me to the right position"
+
+#: geoImgGPXMainAjaxRequest.php:327 geoImgGPXPagePostAdmin.php:29
+msgid "Daten werden geladen"
+msgstr "data is loading"
+
+#: geoImgGPXMainAjaxRequest.php:373
+msgid "Fehler: Bild nicht gelöscht"
+msgstr "mistake: picture  is not  deleted"
+
+#: geoImgGPXMainAjaxRequest.php:375 geoImgGPX_ShowShortCode.php:323
+msgid "Bild gelöscht"
+msgstr "picture deleted"
+
+#: geoImgGPX_init.php:82
+msgid "Images with GPS Data on Maps"
+msgstr "Images with GPS Data on Maps"
+
+#: geoImgGPX_init.php:140 geoImgGPX_init.php:150
+msgid "Einstellungen"
+msgstr "Settings"
+
+#: geoImgGPX_init.php:141
+msgid "FAQ"
+msgstr "FAQ"
+
+#: geoImgGPX_init.php:142
+msgid "Support"
+msgstr "Support"
+
+#: geoImgGPX_ShowShortCode.php:242
+msgid "Es wurden keine Bilder mit GeoDaten gefunden."
+msgstr "no pictures  with geo data found"
+
+#. Name of the plugin
+msgid "Images with GPS-Data and GPX on Maps"
+msgstr "Images with GPS-Data and GPX on Maps"
+
+#. Description of the plugin
+msgid ""
+"Images with GPS on Google Maps displays your photos on a Google Maps map "
+"using GPS or without GPS Geotags."
+msgstr ""
+"Images with GPS on Google Maps displays your photos on a Google Maps map "
+"using GPS or without GPS Geotags."
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/images-with-gps-data-and-gpx-on-maps/"
+msgstr "https://wordpress.org/plugins/images-with-gps-data-and-gpx-on-maps/"
+
+#. Author of the plugin
+msgid "Severin Roth"
+msgstr "Severin Roth"
+
+#. Author URI of the plugin
+msgid "https://profiles.wordpress.org/severinroth"
+msgstr "https://profiles.wordpress.org/severinroth"

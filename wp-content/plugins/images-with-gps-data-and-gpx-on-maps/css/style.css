@@ -1,0 +1,137 @@
+.GeoImgGPXmarkerContainer{
+	z-index: 2000;
+	opacity:1;
+}
+.GeoImgGPXmarkerImg {
+  width: 128px;
+  height: 186px;
+  background: url('../images/marker-back.png') 0 0 no-repeat;
+  position: relative;
+  cursor: pointer;
+}
+.GeoImgGPXmarkerImg .GeoImgGPXmarkerDot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #a2253c;
+  border-radius: 100%;
+  bottom: 35px;
+  left: 50%;
+  margin-left: -10px;
+}
+.GeoImgGPXmarkerImg .GeoImgGPXmarkerThumb {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  border-radius: 100%;
+  overflow: hidden;
+  top: 9px;
+  left: 50%;
+  margin-left: -54px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#GeoImgGPXAdminResponse{
+	overflow-y:auto;
+}
+
+.gmBEImgDiv{
+	float:left;
+	position:absulute;
+	border:1px solid gray;
+	margin:1px;
+}
+.gmBEImgDiv_title{
+	display:inline-block;
+	max-width:105px;
+	word-wrap: break-word;
+}
+.gmBEImg{
+	height:50px;
+	cursor:pointer;
+}
+.gmBEImgBig{
+	cursor:pointer;
+	display:none;
+	position:absolute;
+	top:10px;
+	left:20px;
+	border:1px solid gray;
+	padding:5px;
+	display:none;
+	min-height:100px;
+	min-width:150px;
+	background-color: rgba( 255, 255, 255, 1);
+	z-index:2000;
+}
+.gmBEImgGPS{
+	height:15px;
+	position:relative;
+	bottom:-3px;
+	left:-1px;
+	cursor:pointer;
+}
+.gmBEImgDel{
+	height:15px;
+	position:relative;
+	bottom:-3px;
+	left:17px;
+	cursor:pointer;
+}
+.gmBEImgDelW{
+	height:15px;
+	position:relative;
+	xbottom:-15px;
+	cursor:pointer;
+}
+#geoImgGPXdialog{
+	position:fixed;
+	top:20%;
+	left:30%;
+	border:1px solid gray;
+	padding:5px;
+	display:none;
+	min-height:100px;
+	min-width:150px;
+	background-color: rgba( 255, 255, 255, 0.99);
+
+}
+.gmClose{
+	position:absolute;
+	top:5px;
+	right:8px;
+	cursor:pointer;
+	color:#72777c;
+}
+.gmCloseHead{
+	width:100%;
+	height:20px;
+	background-color:#f1f1f1;
+	cursor:pointer;
+	margin-bottom:5px;
+	color:#72777c;
+}
+#gmEditMap{
+	height:300px;
+	width:400px;
+	margin: 0;
+	padding: 0;
+}
+.gmGPSEditImg{
+	width:400px;
+	max-height:200px;
+	overflow-x:auto;
+}
+.gmGPSWindowTitle{
+
+}
+.gmGPSCloseImg img{
+	cursor: pointer;
+	float: right;
+}
+.gm_warning{
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border-color: #faebcc;
+} 

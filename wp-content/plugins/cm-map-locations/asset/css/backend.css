@@ -1,0 +1,60 @@
+.right {float: right;}
+
+tr.cmloc-category th {font-weight: bold; background: #e0e0e0; color: black;}
+.cmloc-stats-user-table thead th:first-child, tr.cmloc-channel td:first-child {padding-left:2em;}
+.cmloc-stats-user-table tr:nth-child(even) {background: #f6f6f6;}
+
+.cmloc-pagination, .cmloc-pagination li {list-style: none; margin: 0; padding: 0;}
+.cmloc-pagination li {display: inline-block;}
+.cmloc-pagination a {display: inline-block; padding: 0.5em 1em; font-size: 14px; text-decoration: none; font-weight: bold; background: #f0f0f0; border: 1px solid #cccccc; color: #777777;}
+.cmloc-pagination a:hover {color: black; border-color: #999999;}
+.cmloc-pagination .current-page a {background: white; color: black;}
+.cmloc-mp-cost-add {margin-top: 1em;}
+
+.cmloc-get-pro {background: white; padding: 1em; width: 450px; border: solid 1px #dddddd; margin: 0 auto;}
+.cmloc-get-pro, .cmloc-get-pro p {font-size: 110%;}
+.cmloc-get-pro p {margin: 0;}
+.cmloc-get-pro .center {text-align: center;}
+.cmloc-get-pro a.button {font-size: 120%; font-weight: bold; padding: 0 2em; line-height: 2em; height: 2em; background: #006699; color: white; margin: 1em 0;}
+.cmloc-pro-features {list-style: none;}
+.cmloc-pro-features li {margin: 0;}
+.cmloc-pro-features li:before {content: "\f147";
+	display: inline-block;
+	padding-right: 5px;
+	-webkit-font-smoothing: antialiased;
+	font: normal 30px 'dashicons';
+	vertical-align: middle;
+	color: #009900;
+	cursor: default;
+	
+}
+
+.cmloc-report-table td {height: 2em;}
+.cmloc-report-row-filter {margin-left: 1em; display: none; border: 1px solid #cccccc; background: #f0f0f0; color: #333333; padding: 3px 0.5em; float: right; font-size: 10px;}
+td:hover .cmloc-report-row-filter, .cmloc-report-row-filter:active {display: inline-block;}
+.cmloc-report-table .cmloc-actions, .cmloc-report-table .cmloc-actions li {list-style: none; display: inline-block; margin: 0; padding: 0;}
+.cmloc-report-table .cmloc-actions a {padding: 0 0.5em 0 0;}
+
+.cmloc-subscription-add-form .inner {background: white; padding: 1em; margin-bottom: 1em; border: solid 1px #e0e0e0;}
+.cmloc-subscription-add-form .inner.closed {display: none;}
+.cmloc-subscription-add-form select {vertical-align: top;}
+.cmloc-subscription-add-form input[type=text] {width: 8em;}
+.cmloc-subscription-add-form input[type=number] {width: 5em;}
+.cmloc-subscription-add-form label {margin-right: 1em;}
+.cmloc-subscription-add-form input[type=submit] {padding-left: 1em; padding-right: 1em;}
+.cmloc-subscription-add-form .cmloc-subscription-add-post {display: none;}
+
+
+#cmloc-import-frame {width: 100%; height: 300px;}
+
+.cmloc-block {background: white; padding: 1em; width: 600px; border: solid 1px #dddddd; margin: 2em 2em 2em 0; float: left;}
+.cmloc-block h3 {margin-top: 0 !important;}
+
+.cmloc-admin-notice {position: relative; padding-right: 30px !important;}
+.cmloc-admin-notice .cmloc-dismiss {position: absolute; top: 10px; right: 10px; text-decoration: none; background: #aaaaaa; color: white;
+	border-radius: 15px 15px; width: 15px; height: 15px; text-align: center; font-size: 15px; font-weight: bold; line-height: 15px;}
+
+.cmloc-csv-example {display: block; background: #eaeaea; white-space: pre-line; overflow: auto; padding: 1em;}
+.cmloc-csv-example code {background: none !important;}
+
+.cmloc-embed-shortcode textarea {width: 100%; height: auto; background: #f0f0f0;}

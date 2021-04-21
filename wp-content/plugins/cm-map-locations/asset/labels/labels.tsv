@@ -1,0 +1,70 @@
+images	Images	Images gallery label.	General
+missing_google_maps_app_key	Administrator must enter the Google Maps App Key in the plugin settings.	Message when Google API key is missing.	General
+length_km	km	Kilometers length unit.	General
+length_miles	miles	Miles length unit.	General
+
+page_not_found	Page not found.	Message on 404 page.	Navigation
+menu_all_locations	All locations	All locations menu item.	Navigation
+menu_my_locations	My locations	My locations menu item.	Navigation
+menu_add_location	Add location	Add location menu item.	Navigation
+menu_view_location	View location	View location menu item.	Navigation
+menu_edit_location	Edit location	Edit location menu item.	Navigation
+search_placeholder	Search address, ZIP code or text	Search input palceholder.	Navigation
+search_btn	Search	Search button label.	Navigation
+show_fullscreen_btn	Fullscreen	Show fullscreen button.	Navigation
+show_fullscreen_title	Fullscreen	Show fullscreen button's title.	Navigation
+location_backlink	Back	Location backlink label.	Navigation
+
+location	location	Single location name.	Location
+locations	locations	Plural location name.	Location
+shortcodes	Shortcodes	Shortcodes label on edit location form.	Location
+location_name	Location name	Field name for location name.	Location
+location_description	Description	Field name for location description.	Location
+location_status	Status	Field name for location status.	Location
+location_status_draft	Draft	Location "draft" status.	Location
+location_status_publish	Publish	Location "publish" status.	Location
+location_access_denied	Access denied.	Access denied message for location page.	Location
+location_index_title	CM Map Locations	Location index page title.	Location
+single_location_title_part	CM Map Locations	Single location title part.	Location
+location_images	Images	Location images field.	Location
+location_index_access_denied	Access denied.	Access denied message for location index page.	Location
+location_not_found	Location not found.	Message when trying to open not existing location.	Location
+locations_index_summary	Displaying %d of %d locations.	Label for the locations number summary.	Location
+location_created	Created	Location created date.	Location
+location_updated	Updated	Location updated date.	Location
+location_latitude	Latitude	Field name for location latitude.	Location
+location_longitude	Longitude	Field name for location longitude.	Location
+location_altitude	Altitude	Location's altitude.	Location
+location_address	Address	Location's address.	Location
+location_postal_code	Postal code	Location's postal code.	Location
+location_phone_number	Phone number	Location's phone number.	Location
+location_website	Website	Location's website.	Location
+location_email	Email address	Location's email.	Location
+location_save_success	Location has been saved.	Success message after saving location changes.	Location
+index_no_locations	No locations to display.	Message when no locations to display.	Location
+
+dashboard_edit_location_title	Edit location	Title of the Edit location page.	Dashboard
+dashboard_my_locations_title	My locations	Title of the My locations index page.	Dashboard
+dashboard_add_location_title	Add location	Title of the Add location page.	Dashboard
+dashboard_access_denied_msg	Access denied.	Message when trying to open a location without having access.	Dashboard
+dashboard_unknown_action_msg	Unknown action.	Message when trying to call not existing action.	Dashboard
+dashboard_image_open	Open image	Open image button label.	Dashboard
+dashboard_image_remove	Remove image	Open image button label.	Dashboard
+dashboard_image_add	Add image	Add image button label.	Dashboard
+dashboard_images_description	Drag images to change the order.	Description of the images field.	Dashboard
+dashboard_save_btn	Save	Save button label.	Dashboard
+dashboard_locations_actions	Actions	Dashboard locations index actions column.	Dashboard
+dashboard_view	View	View button label.	Dashboard
+dashboard_edit	Edit	Edit button label.	Dashboard
+dashboard_delete	Delete	Delete button label.	Dashboard
+confirm_delete_msg	Do you really want to delete?	Confirmation message on delete action.	Dashboard
+dashboard_no_locations	No locations.	Message when found no locations.	Dashboard
+dashboard_map_search	Find location...	Label for the map search input field.	Dashboard
+dashboard_icon	Marker icon	The marker icon field.	Dashboard
+dashboard_choose_icon_btn	Choose icon	Choose icon button	Dashboard
+dashboard_upload_icon_btn	Upload icon	Upload icon button	Dashboard
+dashboard_upload_image	Upload image:	Upload image.	Dashboard
+dashboard_video_add_btn	Add video	Add video button.	Dashboard
+upload_success	Image has been uploaded.	Image has been uploaded.	Dashboard
+
+widget_title_related_locations	Related locations	"Related locations" widget title	Widgets

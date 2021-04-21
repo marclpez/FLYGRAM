@@ -1,0 +1,15 @@
+Baixar e instalar https://poedit.net/
+
+Para alterar as mensagens:
+1. Abra o wp_textbox-pt_BR.po com o Poedit
+2. Altere as mensagens
+3. Salve
+
+Para traduzir:
+1. Copie o arquivo wp_textbox.pot
+2. Renomeie o arquivo copiado para wp_textbox_locale.po, exemplo: wp_textbox_en_US.po (A extesão é .po mesmo)
+3. Abra o arquivo renomeado com o Poedit
+4. Efetue a tradução
+5. Salve
+
+Ps: O idioma dos plugins seguem o idioma configurado no Wordpress.

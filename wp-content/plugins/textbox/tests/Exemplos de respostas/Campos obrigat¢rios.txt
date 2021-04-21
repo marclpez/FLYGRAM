@@ -1,0 +1,5 @@
+Post Title
+{"statusCode":5,"message":"Campos n\u00e3o preenchidos: (post_title)"}
+
+Post Title e Post Content
+{"statusCode":5,"message":"Campos n\u00e3o preenchidos: (post_title,post_content)"}

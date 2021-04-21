@@ -1,0 +1,246 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-04-23 14:24+0300\n"
+"PO-Revision-Date: 2018-05-08 13:36+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: car-route-planner.php\n"
+"X-Poedit-SearchPath-1: class.car-route-planner-admin.php\n"
+"X-Poedit-SearchPath-2: class.car-route-planner.php\n"
+
+#: class.car-route-planner-admin.php:21
+msgid "Settings"
+msgstr "设置"
+
+#: class.car-route-planner-admin.php:28 class.car-route-planner-admin.php:29
+msgid "Car Route Planner"
+msgstr "汽车路线规划"
+
+#: class.car-route-planner-admin.php:39
+msgid "Plugin's server is temporarily unavailable. Reload the page in a few minutes."
+msgstr "插件的服务器暂时不可用。 几分钟后重新加载页面。"
+
+#: class.car-route-planner-admin.php:95
+msgid "Kilometer, liter"
+msgstr "公里，升"
+
+#: class.car-route-planner-admin.php:96
+msgid "Mile, UK gallon"
+msgstr "英里，英国加仑"
+
+#: class.car-route-planner-admin.php:97
+msgid "Mile, US gallon"
+msgstr "英里，美制加仑"
+
+#: class.car-route-planner-admin.php:109 class.car-route-planner-admin.php:229
+msgid "Generate shortcode"
+msgstr "生成短代码"
+
+#: class.car-route-planner-admin.php:116
+msgid "Minimalistic mode, results will be displayed on plugin developer's website."
+msgstr "简约模式下，结果将显示在插件开发人员的网站上。"
+
+#: class.car-route-planner-admin.php:117
+msgid "Advanced mode, results will be displayed inside iframe with 'powered by' hyperlink."
+msgstr "高级模式下，结果将显示在iframe的'powered by'超链接内。"
+
+#: class.car-route-planner-admin.php:120
+msgid "General settings"
+msgstr "通用设定"
+
+#: class.car-route-planner-admin.php:122
+msgid "Language"
+msgstr "语言"
+
+#: class.car-route-planner-admin.php:130
+msgid "Currency"
+msgstr "货币"
+
+#: class.car-route-planner-admin.php:138
+msgid "Units"
+msgstr "单位"
+
+#: class.car-route-planner-admin.php:148
+msgid "Palette"
+msgstr "界面调色板"
+
+#: class.car-route-planner-admin.php:150
+msgid "Text color"
+msgstr "文字色"
+
+#: class.car-route-planner-admin.php:153
+msgid "Background color"
+msgstr "背景色"
+
+#: class.car-route-planner-admin.php:156
+msgid "Accent color"
+msgstr "强调色"
+
+#: class.car-route-planner-admin.php:160
+msgid "Form"
+msgstr "形式设定"
+
+#: class.car-route-planner-admin.php:162
+msgid "Default value for \"%s\""
+msgstr "\"%s\"默认值"
+
+#: class.car-route-planner-admin.php:162
+msgid "From"
+msgstr "从"
+
+#: class.car-route-planner-admin.php:165
+msgid "To"
+msgstr "到"
+
+#: class.car-route-planner-admin.php:169
+msgid "show \"%s\""
+msgstr "显示 \"%s\""
+
+#: class.car-route-planner-admin.php:180
+msgid "hide \"%s\""
+msgstr "隐藏 \"%s\""
+
+#: class.car-route-planner-admin.php:181
+msgid "default value for \"%s\" must be specified"
+msgstr "必须指定\"%s\"的默认值"
+
+#: class.car-route-planner-admin.php:171
+msgid "Intermediate points"
+msgstr "中间点"
+
+#: class.car-route-planner-admin.php:175
+msgid "show fuel calculator"
+msgstr "显示燃料估算"
+
+#: class.car-route-planner-admin.php:177
+msgid "Fuel consumption"
+msgstr "燃油消耗"
+
+#: class.car-route-planner-admin.php:180
+msgid "Fuel price"
+msgstr "燃油价格"
+
+#: class.car-route-planner-admin.php:184
+msgid "show \"Maximum speed\" fields"
+msgstr "显示 \"最大速度\" 估算值"
+
+#: class.car-route-planner-admin.php:186
+msgid "Maximum speed on motorway"
+msgstr "高速公路上的最高速度"
+
+#: class.car-route-planner-admin.php:189
+msgid "Maximum speed on other roads"
+msgstr "其他道路上的最大速度"
+
+#: class.car-route-planner-admin.php:194
+msgid "Results"
+msgstr "结果"
+
+#: class.car-route-planner-admin.php:197
+msgid "Route length"
+msgstr "路线长度"
+
+#: class.car-route-planner-admin.php:200
+msgid "Driving time"
+msgstr "驾驶时间"
+
+#: class.car-route-planner-admin.php:203
+msgid "Fuel amount"
+msgstr "燃料量"
+
+#: class.car-route-planner-admin.php:206
+msgid "Fuel cost"
+msgstr "燃料成本"
+
+#: class.car-route-planner-admin.php:209
+msgid "Customized cost"
+msgstr "成本设定"
+
+#: class.car-route-planner-admin.php:210
+msgid "how to compose formula"
+msgstr "如何撰写成本计算公式"
+
+#: class.car-route-planner-admin.php:211
+msgid "Formula for \"Customized cost\""
+msgstr "\"成本设定\"计算公式"
+
+#: class.car-route-planner-admin.php:214
+msgid "Label for \"Customized cost\""
+msgstr "\"成本设定\"标签"
+
+#: class.car-route-planner-admin.php:218
+msgid "show map"
+msgstr "显示地图"
+
+#: class.car-route-planner-admin.php:221
+msgid "show route scheme"
+msgstr "显示规划路线"
+
+#: class.car-route-planner-admin.php:224
+msgid "calculate route automatically on page load"
+msgstr "页面加载时自动计算路线"
+
+#: class.car-route-planner-admin.php:232
+msgid "Copy shortcode"
+msgstr "复制简码"
+
+#: class.car-route-planner-admin.php:235 class.car-route-planner-admin.php:239
+msgid "Copy shortcode to clipboard"
+msgstr "将简码复制到剪贴板"
+
+#: class.car-route-planner-admin.php:236
+msgid "Copy this shortcode into your post or page to display the Route Planner."
+msgstr "将此简码复制到您的帖子或页面中以显示路线规划器。"
+
+#: class.car-route-planner-admin.php:240
+msgid "Copied"
+msgstr "拷贝完毕"
+
+#: class.car-route-planner.php:211
+msgid "Calculate"
+msgstr "计算"
+
+#: class.car-route-planner.php:343
+msgid "mpg"
+msgstr "英里每加仑"
+
+#: class.car-route-planner.php:352
+msgid "km/h"
+msgstr "千米/小时"
+
+#: class.car-route-planner.php:354
+msgid "mph"
+msgstr "英里每小时"
+
+#: class.car-route-planner.php:359
+msgid "km"
+msgstr "千米"
+
+#: class.car-route-planner.php:361
+msgid "mi"
+msgstr "英里"
+
+#: class.car-route-planner.php:366
+msgid "L"
+msgstr "升"
+
+#: class.car-route-planner.php:368
+msgid "gal"
+msgstr "加仑"
+
+#: class.car-route-planner-admin.php:269
+msgid "strictly limit results by countries"
+msgstr "严格限制各国的结果"
+
+#: class.car-route-planner-admin.php:279
+msgid "soft preference for countries"
+msgstr "对国家的软偏好"

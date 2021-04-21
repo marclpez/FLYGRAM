@@ -1,0 +1,259 @@
+<?php
+
+/**
+ * AJAX callbacks for the points component administration screens.
+ *
+ * @package WordPoints\Points\Administration
+ * @since 1.2.0
+ */
+
+/**
+ * Save points hooks order via AJAX.
+ *
+ * @since 1.0.0
+ *
+ * @WordPress\action wp_ajax_wordpoints-points-hooks-order
+ */
+function wordpoints_ajax_points_hooks_order() {
+
+	if ( check_ajax_referer( 'save-network-wordpoints-points-hooks', 'savehooks', false ) ) {
+
+		if ( ! current_user_can( 'manage_network_wordpoints_points_hooks' ) ) {
+			wp_die( -1, '', array( 'response' => 403 ) );
+		}
+
+		// Saving network hooks order, turn on network mode.
+		WordPoints_Points_Hooks::set_network_mode( true );
+
+	} elseif ( check_ajax_referer( 'save-wordpoints-points-hooks', 'savehooks', false ) ) {
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( -1, '', array( 'response' => 403 ) );
+		}
+
+	} else {
+
+		// CSRF attack (or, more probably, the user left the browser open too long).
+		wp_die( -1, '', array( 'response' => 403 ) );
+	}
+
+	// Save hooks order for all points types.
+	if ( ! isset( $_POST['points_types'] ) || ! is_array( $_POST['points_types'] ) ) {
+		wp_die( -1, '', array( 'response' => 400 ) );
+	}
+
+	$points_types_hooks = array();
+
+	foreach ( array_keys( wordpoints_get_points_types() ) as $points_type ) {
+
+		if ( empty( $_POST['points_types'][ $points_type ] ) ) {
+			continue;
+		}
+
+		$hooks = sanitize_text_field( wp_unslash( $_POST['points_types'][ $points_type ] ) );
+
+		$points_type_hooks = array();
+
+		$hooks = explode( ',', $hooks );
+
+		foreach ( $hooks as $order => $hook_id ) {
+
+			if ( false === strpos( $hook_id, 'hook-' ) ) {
+				continue;
+			}
+
+			$points_type_hooks[ $order ] = substr( $hook_id, strpos( $hook_id, '_' ) + 1 );
+		}
+
+		$points_types_hooks[ $points_type ] = $points_type_hooks;
+	}
+
+	WordPoints_Points_Hooks::save_points_types_hooks( $points_types_hooks );
+
+	wp_die( 1, '', array( 'response' => 200 ) );
+}
+
+/**
+ * Save points hook settings via AJAX.
+ *
+ * @since 1.0.0
+ * @since 2.1.0 Deprecated handling of CRUD actions for points types.
+ *
+ * @WordPress\action wp_ajax_save-wordpoints-points-hook
+ */
+function wordpoints_ajax_save_points_hook() {
+
+	if ( check_ajax_referer( 'save-network-wordpoints-points-hooks', 'savehooks', false ) ) {
+
+		if ( ! current_user_can( 'manage_network_wordpoints_points_hooks' ) ) {
+			wp_die( -1, '', array( 'response' => 403 ) );
+		}
+
+		// Saving network hooks, turn on network mode.
+		WordPoints_Points_Hooks::set_network_mode( true );
+
+	} elseif ( check_ajax_referer( 'save-wordpoints-points-hooks', 'savehooks', false ) ) {
+
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( -1, '', array( 'response' => 403 ) );
+		}
+
+	} else {
+
+		// CSRF attack (or, more probably the user left the browser open too long).
+		wp_die( -1, '', array( 'response' => 403 ) );
+	}
+
+	$error = __( 'An error has occurred. Please reload the page and try again.', 'wordpoints' );
+
+	if ( isset( $_POST['points-slug'] ) ) {
+
+		// - We are saving the settings for a points type.
+
+		// We don't use this part after 2.1.0, but we keep it around for back-compat.
+		_deprecated_argument(
+			__FUNCTION__
+			, '2.1.0'
+			, 'Performing CRUD actions on points types using this function is deprecated.'
+		);
+
+		if ( ! current_user_can( 'manage_wordpoints_points_types' ) ) {
+			wp_die( -1, '', array( 'response' => 403 ) );
+		}
+
+		$settings = array();
+
+		if ( isset( $_POST['points-name'] ) ) {
+			$settings['name'] = trim( sanitize_text_field( wp_unslash( $_POST['points-name'] ) ) );
+		}
+
+		if ( isset( $_POST['points-prefix'] ) ) {
+			$settings['prefix'] = ltrim( sanitize_text_field( wp_unslash( $_POST['points-prefix'] ) ) );
+		}
+
+		if ( isset( $_POST['points-suffix'] ) ) {
+			$settings['suffix'] = rtrim( sanitize_text_field( wp_unslash( $_POST['points-suffix'] ) ) );
+		}
+
+		$points_type = sanitize_key( $_POST['points-slug'] );
+
+		$old_settings = wordpoints_get_points_type( $points_type );
+
+		if ( false === $old_settings ) {
+			wp_die( -1, '', array( 'response' => 200 ) );
+		}
+
+		if ( is_array( $old_settings ) ) {
+			$settings = array_merge( $old_settings, $settings );
+		}
+
+		if ( ! wordpoints_update_points_type( $points_type, $settings ) ) {
+
+			// If this fails, show the user a message along with the form.
+			echo '<p>' . esc_html__( 'An error has occurred. Please try again.', 'wordpoints' ) . '</p>';
+
+			WordPoints_Points_Hooks::points_type_form( $points_type, 'none' );
+		}
+
+	} else {
+
+		// - We are creating/updating/deleting an instance of a hook.
+
+		if ( ! isset( $_POST['id_base'], $_POST['hook-id'], $_POST['points_type'], $_POST['hook_number'] ) ) {
+			wp_die( -1, '', array( 'response' => 400 ) );
+		}
+
+		$id_base        = sanitize_key( $_POST['id_base'] );
+		$hook_id        = sanitize_key( $_POST['hook-id'] );
+		$points_type_id = sanitize_key( $_POST['points_type'] );
+		$number         = (int) $_POST['hook_number'];
+
+		/*
+		 * Normally the hook ID will be in 'hook-id' when we are updating a hook.
+		 * But when we are saving a brand new instance of a hook or updating a newly
+		 * created hook, the ID won't have been set when the form was output, so
+		 * 'hook-id' will be empty, and we'll get the ID from 'multi_number'.
+		 */
+		if ( ! $number ) {
+
+			// This holds the ID number if the hook is brand new.
+			if ( ! isset( $_POST['multi_number'] ) || ! wordpoints_posint( $_POST['multi_number'] ) ) {
+				wp_die( '<p>' . esc_html( $error ) . '</p>', '', array( 'response' => 400 ) );
+			}
+
+			$number  = (int) $_POST['multi_number'];
+			$hook_id = $id_base . '-' . $number;
+		}
+
+		$hook = WordPoints_Points_Hooks::get_handler( $hook_id );
+
+		$settings = false;
+
+		if ( isset( $_POST[ 'hook-' . $id_base ] ) && is_array( $_POST[ 'hook-' . $id_base ] ) ) {
+			$settings = wp_unslash( $_POST[ 'hook-' . $id_base ] ); // WPCS: sanitization OK.
+		}
+
+		$points_types_hooks = WordPoints_Points_Hooks::get_points_types_hooks();
+
+		// Get the hooks for this points type.
+		$points_type_hooks = ( isset( $points_types_hooks[ $points_type_id ] ) ) ? $points_types_hooks[ $points_type_id ] : array();
+
+		if ( ! empty( $_POST['delete_hook'] ) ) {
+
+			// - We are deleting a hook instance.
+
+			if ( false === $hook ) {
+				wp_die( '<p>' . esc_html( $error ) . '</p>', '', array( 'response' => 400 ) );
+			}
+
+			$hook->delete_callback( $number );
+
+			// Remove this instance of the hook, and reset the positions (keys).
+			$points_types_hooks[ $points_type_id ] = array_diff( $points_type_hooks, array( $hook_id ) );
+
+			WordPoints_Points_Hooks::save_points_types_hooks( $points_types_hooks );
+
+			wp_die( esc_html( "deleted:{$hook_id}" ), '', array( 'response' => 200 ) );
+
+		} elseif ( $settings && false === $hook ) {
+
+			// - We are creating a new instance of a hook.
+
+			/*
+			 * Get a hook object for this type of hook. We have to do this because
+			 * since the hook is new, it hasn't been assigned an ID yet, so we can't
+			 * just get it from the array of hooks by ID.
+			 */
+			$hook = WordPoints_Points_Hooks::get_handler_by_id_base( $id_base );
+
+			$new_instance = reset( $settings );
+
+			// Save the points types-hooks associations.
+			$points_type_hooks[] = $hook->get_id( $number );
+			$points_types_hooks[ $points_type_id ] = $points_type_hooks;
+			WordPoints_Points_Hooks::save_points_types_hooks( $points_types_hooks );
+
+		} else {
+
+			// - We are updating the settings for an instance of a hook.
+
+			if ( false === $hook ) {
+				wp_die( '<p>' . esc_html( $error ) . '</p>', '', array( 'response' => 400 ) );
+			}
+
+			$new_instance = ( ! empty( $settings ) ) ? reset( $settings ) : array();
+
+		} // End if ( deleting ) elseif ( creating ) else { updating }.
+
+		$hook->update_callback( wp_unslash( $new_instance ), $number );
+
+		if ( empty( $_POST['add_new'] ) ) {
+			$hook->form_callback( $number );
+		}
+
+	} // End if ( saving points type ) else { deleting/creation/updating hook }.
+
+	wp_die( '', '', array( 'response' => 200 ) );
+}
+
+// EOF

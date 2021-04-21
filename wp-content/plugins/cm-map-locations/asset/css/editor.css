@@ -1,0 +1,63 @@
+@CHARSET "UTF-8";
+
+.cmloc-field {margin: 0 0 2em 0;}
+.cmloc-field > label {display: block; color: black;}
+.cmloc-location-editor .cmloc-field-desc {color: #666666;}
+.cmloc-location-editor .cmloc-field input[type=text] {width: 100%;}
+.cmloc-location-editor .cmloc-field-categories ul, .cmloc-location-editor .cmloc-field-categories li {list-style: none; margin: 0 !important; padding: 0 !important;}
+.cmloc-location-editor .cmloc-field-categories > ul {max-height: 300px; overflow: auto;}
+.cmloc-location-editor .cmloc-field-categories ul ul {margin-left: 1.5em !important;}
+.cmloc-location-editor .cmloc-field-description textarea {width: 100%; height: 10em;}
+
+.cmloc-location-editor .cmloc-field-icon .cmloc-icons-list {display: none;}
+.cmloc-icons-list img {cursor: pointer;}
+
+.cmloc-images-list, .cmloc-images-list li {margin: 0 !important; padding: 0 !important; list-style: none;}
+.cmloc-images-list li {display: inline-block; position: relative; margin-right: 1em !important;}
+.cmloc-images-list img {max-width: 80px;}
+.cmloc-image-delete {position: absolute; top: 0; right: 0; cursor: pointer; background: white; color: black; display: block; width: 1em; text-align: center; line-height: 1em;}
+
+#cmloc-editor-map {margin-top: 2em;}
+#cmloc-editor-map h4 {}
+#cmloc-editor-map-canvas {width: 100%; height: 600px; margin: 0 0 2em 0;}
+
+.cmloc-locations-list {list-style: none !important; margin: 0 !important; padding: 0 !important;}
+.cmloc-locations-list textarea {width: 100%; height: 100px;}
+.cmloc-locations-list > li {list-style: none !important; padding: 0 0 0 15px; margin: 15px 0 0 0;}
+.cmloc-locations-list label {display: block;}
+
+.cmloc-location-editor .cmloc-location-params {margin: 2em 0 !important;}
+.cmloc-location-editor .cmloc-location-params > li {display: inline-block !important;}
+
+.cmloc-locations-editor-mode .current {background: #f0f0f0;}
+
+.cmloc-editor-instructions-btn {float: right;}
+.cmloc-editor-instructions {display: none;}
+.cmloc-location-editor input[type=submit] {margin: 2em 0; font-size: 18px; background: #339900 !important; color: white !important; padding: 0.6em 2em; cursor: pointer;}
+
+.cmloc-images-add-btn, .cmloc-choose-icon-btn, .cmloc-upload-icon-btn {background: #009944 !important; color: white !important; padding: 0.5em 2em;
+	display: inline-block; font-weight: bold; margin: 1em 0; vertical-align: middle;}
+
+.cmloc-upload-icon-btn {margin: 0 1em 0 0 !important;}
+.cmloc-upload-wrapper {display: inline-block; position: relative; overflow: hidden; vertical-align: middle;}
+.cmloc-upload-icon-input {background: transparent; display: block; width: 10000px; left: -1000px; position: absolute; height: 100%; top: 0; cursor: pointer;}
+.cmloc-loader-inline {display: inline-block; width: 16px; height: 16px; background: url(../img/ajax-loader.gif) no-repeat top left; vertical-align: middle;}
+
+
+.cmloc-location-params li.cmloc-editable {cursor: pointer;}
+.cmloc-location-editor .cmloc-location-params li.cmloc-editable span:after {
+	content: "\f464";
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 20px 'dashicons';
+	vertical-align: top;
+	padding-left: 5px;
+}
+
+.cmloc-toolbar li {width: 100%;}
+.cmloc-find-location {width: 80% !important; max-width: 300px;}
+.cmloc-icon-size {display: inline !important;}
+
+.cmloc-btn {font: bold 14px Arial; cursor: pointer; background: #339900 !important; color: white !important; display: inline-block; padding: 0.5em 2em; border: none !important;}
+.cmloc-btn:hover {background: #117700 !important;}
+.cmloc-btn .dashicons {vertical-align: middle; margin-top: -2px; margin-right: 0.3em;}

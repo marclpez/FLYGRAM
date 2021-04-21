@@ -1,0 +1,21 @@
+html, body {margin: 0 !important; padding: 0 !important; overflow: hidden; background: rgb(51, 119, 255) !important;}
+.cmloc-embed .cmloc-shortcode-route-map {margin: 0 !important; color: white !important; font-family: arial;}
+.cmloc-embed a:link, .cmloc-embed a:visited {color: white; text-decoration: none;}
+.cmloc-embed .cmloc-shortcode-route-map h2 {margin: 0 !important; padding: 0 10px; font-size: 18px !important; line-height: 35px !important;}
+.cmloc-embed .cmloc-shortcode-route-map h2, .cmloc-embed .cmloc-route-params {background: rgb(51, 119, 255);}
+.cmloc-embed .cmloc-shortcode-route-map h2, .cmloc-embed .cmloc-shortcode-route-map h2 a {color: white !important; text-decoration: none;}
+.cmloc-embed .cmloc-shortcode-route-map h2 a {display: block;}
+.cmloc-embed .cmloc-location-map-canvas {height: 415px;}
+.cmloc-embed .cmloc-route-map {background: white;}
+.cmloc-embed .cmloc-route-params, .cmloc-route-params, .cmloc-route-editor ul.cmloc-route-params, .cmloc-route-single ul.cmloc-route-params {margin: 0 !important; white-space: nowrap;}
+.cmloc-embed .cmloc-route-params, .cmloc-embed .cmloc-route-params strong, .cmloc-embed .cmloc-route-params span {color: white !important;}
+.cmloc-embed .cmloc-route-params strong {font-size: 10px !important;}
+.cmloc-embed .cmloc-route-params span {font-size: 14px !important;}
+.cmloc-embed .cmloc-route-params {white-space: nowrap;}
+.cmloc-route-single ul.cmloc-route-params li {}
+.cmloc-embed .cmloc-route-params li:first-child {border-left: none;}
+.cmloc-embed .cmloc-custom-elevation-graph {height: 85px !important; margin-top: -10px;}
+.zopim {display: none !important; visibility: hidden !important;}
+
+.cmloc-single-location-address {height: 50px; margin: 0; padding: 0; background: rgb(51, 119, 255); display: flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start; }
+.cmloc-single-location-address > div {padding-right: 2em; padding-left: 0.5em;}

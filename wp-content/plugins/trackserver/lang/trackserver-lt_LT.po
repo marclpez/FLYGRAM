@@ -1,0 +1,841 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Trackserver\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-21 23:49+0200\n"
+"PO-Revision-Date: 2018-02-22 00:37+0200\n"
+"Last-Translator: Dainius Kaupaitis <dk@sum.lt>\n"
+"Language-Team: \n"
+"Language: lt_LT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Poedit-KeywordsList: __;_e;esc_html__;esc_attr__;esc_html_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: ./lib\n"
+
+#: tracks-list-table.php:22
+msgid "Edit track properties"
+msgstr "Taisyti trasos savybes"
+
+#: tracks-list-table.php:23 tracks-list-table.php:66
+msgid "Edit"
+msgstr "Taisyti"
+
+#: tracks-list-table.php:26 tracks-list-table.php:65 tracks-list-table.php:89
+msgid "View"
+msgstr "Žiūrėti"
+
+#: tracks-list-table.php:56
+msgid "ID"
+msgstr "ID"
+
+#: tracks-list-table.php:57
+msgid "User"
+msgstr "Naudotojas"
+
+#: tracks-list-table.php:58 trackserver.php:3647
+msgid "Name"
+msgstr "Vardas"
+
+#: tracks-list-table.php:59
+msgid "Start"
+msgstr "Pradžia"
+
+#: tracks-list-table.php:60
+msgid "End"
+msgstr "Pabaiga"
+
+#: tracks-list-table.php:61
+msgid "Points"
+msgstr "Taškai"
+
+#: tracks-list-table.php:62
+msgid "Distance"
+msgstr "Atstumas"
+
+#: tracks-list-table.php:63 trackserver.php:3651
+msgid "Source"
+msgstr "Šaltinis"
+
+#: tracks-list-table.php:64 trackserver.php:3655
+msgid "Comment"
+msgstr "Komentaras"
+
+#: tracks-list-table.php:85 trackserver.php:3663
+msgid "Delete"
+msgstr "Trinti"
+
+#: tracks-list-table.php:86
+msgid "Merge"
+msgstr "Apjungti"
+
+#: tracks-list-table.php:87
+msgid "Download as GPX"
+msgstr "Parsisiųsti kaip GPX"
+
+#: tracks-list-table.php:88
+msgid "Recalculate"
+msgstr "Perskaičiuoti"
+
+#: tracks-list-table.php:117
+msgid "Upload tracks"
+msgstr "Įkelti trasą"
+
+#: trackserver.php:339
+msgid "No tracks to display."
+msgstr "Trasų nerasta."
+
+#: trackserver.php:396
+msgid "Are you sure?"
+msgstr "Esate įsitikinęs?"
+
+#: trackserver.php:397
+msgid "deletion"
+msgstr "trynimas"
+
+#: trackserver.php:398
+msgid "merging"
+msgstr "apjungimas"
+
+#: trackserver.php:399
+msgid "recalculation"
+msgstr "perskaičiavimas"
+
+#: trackserver.php:400 trackserver.php:401
+msgid "downloading"
+msgstr "siunčiama"
+
+#: trackserver.php:402
+msgid "track"
+msgstr "trasą"
+
+#: trackserver.php:403
+msgid "tracks"
+msgstr "trasas (-ų)"
+
+#: trackserver.php:404
+msgid "Edit track"
+msgstr "Keisti trasą"
+
+#: trackserver.php:405
+msgid "Delete point"
+msgstr "Trinti tašką"
+
+#: trackserver.php:406
+msgid "Split track here"
+msgstr "Pertraukti trasą čia"
+
+#: trackserver.php:407
+msgid "Save changes"
+msgstr "Išsaugoti pakeitimus"
+
+#: trackserver.php:408
+msgid "There are unsaved changes. Save?"
+msgstr "Yra neišsaugotų pakeitimų. Išsaugoti?"
+
+#: trackserver.php:409 trackserver.php:3660 trackserver.php:3686
+msgid "Save"
+msgstr "Išsaugoti"
+
+#: trackserver.php:410 trackserver.php:3944
+msgid "Discard"
+msgstr "Atšaukti"
+
+#: trackserver.php:411 trackserver.php:3661 trackserver.php:3687
+msgid "Cancel"
+msgstr "Atšaukti"
+
+#: trackserver.php:413
+#, php-format
+msgid "For %1$s, select %2$s %3$s at minimum"
+msgstr "%1$s: pasirinkite bent %2$s %3$s"
+
+#: trackserver.php:634 trackserver.php:3629 trackserver.php:3724
+#: trackserver.php:4010
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Nepakanka teisių šio puslapio peržiūrėjimui."
+
+#: trackserver.php:640 trackserver.php:1274 trackserver.php:1280
+msgid "Trackserver Options"
+msgstr "Trackserver parinktys"
+
+#: trackserver.php:644
+msgid "Settings updated"
+msgstr "Nustatymai atnaujinti"
+
+#: trackserver.php:654
+msgid "Update options"
+msgstr "Išsaugoti nustatymus"
+
+#: trackserver.php:666 trackserver.php:715 trackserver.php:1177
+msgid "TrackMe settings"
+msgstr "TrackMe nustatymai"
+
+#: trackserver.php:668 trackserver.php:733 trackserver.php:1178
+msgid "OruxMaps MapMyTracks settings"
+msgstr "OruxMaps MapMyTracks nustatymai"
+
+#: trackserver.php:670 trackserver.php:746
+msgid "OsmAnd settings"
+msgstr "OsmAnd nustatymai"
+
+#: trackserver.php:672 trackserver.php:776
+msgid "AutoShare settings"
+msgstr "AutoShare nustatymai"
+
+#: trackserver.php:702
+msgid "Settings"
+msgstr "Nustatymai"
+
+#: trackserver.php:713
+msgid "How to use TrackMe"
+msgstr "Kaip naudoti TrackMe"
+
+#: trackserver.php:714
+msgid "Download TrackMe"
+msgstr "Parsisiųsti TrackMe"
+
+#: trackserver.php:731
+msgid "How to use OruxMaps MapMyTracks"
+msgstr "Kaip naudoti OruxMaps MapMyTracks"
+
+#: trackserver.php:732
+msgid "Download OruxMaps"
+msgstr "Parsisiųsti OruxMaps"
+
+#: trackserver.php:744
+msgid "How to use OsmAnd"
+msgstr "Kaip naudoti OsmAnd"
+
+#: trackserver.php:745
+msgid "Download OsmAnd"
+msgstr "Parsisiųsti OsmAnd"
+
+#: trackserver.php:760
+msgid "Download OwnTracks"
+msgstr "Parsisiųsti OwnTracks"
+
+#: trackserver.php:774
+msgid "How to use AutoShare"
+msgstr "Kaip naudoti AutoShare"
+
+#: trackserver.php:775
+msgid "Download AutoShare"
+msgstr "Parsisiųsti AutoShare"
+
+#: trackserver.php:806
+msgid "Please check with your map tile provider what attribution is required."
+msgstr "Reikalaujamus atributus pasitikrinkite pas žemėlapio kvadratų tiekėją."
+
+#: trackserver.php:821
+msgid ""
+"The URL slug for the 'gettrack' API, used by Trackserver's shortcode [tsmap]"
+msgstr ""
+"URL adreso dalis (slug) skirta 'gettrack' API, naudojama trumpajame "
+"Trackserver'io  kode [tsmap]"
+
+#: trackserver.php:822
+msgid "There is generally no need to change this."
+msgstr "Greičiausia nėra reikalo jį keisti."
+
+#: trackserver.php:828
+msgid "https://wordpress.org/plugins/trackserver/faq/"
+msgstr "https://wordpress.org/plugins/trackserver/faq/"
+
+#: trackserver.php:829
+msgid "FAQ about security"
+msgstr "Saugumo DUK"
+
+#: trackserver.php:838
+msgid ""
+"Check this to enable the proxy for external tracks, which can be used by "
+"prefixing their URL with 'proxy:'"
+msgstr ""
+"Įjungti įgaliotąjį serverį (proxy) išorinėms trasoms, kurios gali būti "
+"naudojamos su URL priešdėliu 'proxy:'"
+
+#: trackserver.php:842
+#, php-format
+msgid ""
+"This will enable your authors to invoke HTTP requests originating from your "
+"server. Only enable this when you need it and if you trust your authors not "
+"to use harmful URLs. Please see the %1$s for more information."
+msgstr ""
+"Tai leis jūsų autoriams naudoti serverio HTTP užklausas. Įjunkite tik tada, "
+"kai to reikia, ir jei pasitikite savo autoriais. Jei norite gauti daugiau "
+"informacijos, žr. %1$s "
+
+#: trackserver.php:853 trackserver.php:932
+msgid "http://en.wikipedia.org/wiki/Server_Name_Indication"
+msgstr "http://en.wikipedia.org/wiki/Server_Name_Indication"
+
+#: trackserver.php:864
+msgid "The URL slug for TrackMe, used in 'URL Header' setting in TrackMe"
+msgstr ""
+"URL adreso dalis (slug) skirta TrackMe, naudojama TrackMe 'URL Header' "
+"nustatyme"
+
+#: trackserver.php:865
+msgid "Full URL header"
+msgstr "Pilnas URL"
+
+#: trackserver.php:869
+#, php-format
+msgid ""
+"Note about HTTPS: %1$s as of v%2$s does not support %3$s for HTTPS "
+"connections. If your WordPress install is hosted on a HTTPS URL that depends "
+"on SNI, please use HTTP. This is a problem with %1$s that Trackserver cannot "
+"fix."
+msgstr ""
+"Pastaba dėl HTTPS: %1$s v%2$s nepalaiko %3$s HTTPS ryšiui. Jei jūsų "
+"WordPress veikia per HTTPS ir yra priklausomas nuo SNI, prašome naudoti "
+"HTTP. %1$s yra problematiškas ir Trackserver negali to ištaisyti."
+
+#: trackserver.php:887
+msgid "The Server extension in TrackMe's settings"
+msgstr "Serverio plėtinys (extension) TrackMe nustatymuose"
+
+#: trackserver.php:888 trackserver.php:920 trackserver.php:990
+msgid "WARNING"
+msgstr "PERSPĖJIMAS"
+
+#: trackserver.php:891
+msgid ""
+"the default value in TrackMe is 'php', but this will most likely NOT work, "
+"so better change it to something else. Anything will do, as long as the "
+"request is handled by WordPress' index.php, so it's better to not use any "
+"known file type extension, like 'html' or 'jpg'. A single character like "
+"'z' (the default) should work just fine. Change the 'Server extension' "
+"setting in TrackMe to match the value you put here."
+msgstr ""
+"reikšmė pagal nutylėjimą yra 'php', bet labai tikėtina, kad  tai NEVEIKS. "
+"Tad verčiau pakeiskite nustatymą į kokį nors kitokį. Veikti turėtų bet kokia "
+"reikšmė, jei tik užklausas apdoroja Wordpress'o index.php failas. Geriau "
+"nenaudoti žinomų failų plėtinių tokių kaip 'html' ar 'jpg'. Pavyzdžiui raidė "
+"'z' (pagal nutylėjimą) turėtų veikti puikiai. Atitinkamai pakeiskite TrackMe "
+"'Serverio plėtinio' (Server extension) nustatymą, kad sutaptų su čia įrašyta "
+"reikšme."
+
+#: trackserver.php:907 trackserver.php:980
+msgid "your Trackserver profile"
+msgstr "jūsų Trackserver profilyje"
+
+#: trackserver.php:915
+#, php-format
+msgid ""
+"Since version 1.9, Trackserver needs a separate password for online tracking "
+"with TrackMe. We do not use the WordPress password here anymore for security "
+"reasons. The access key is unique to your user account and it can be "
+"configured in %1$s. Your current TrackMe password is: %2$s. This is what you "
+"enter in the Password field in TrackMe's settings!!"
+msgstr ""
+"Nuo 1.9 versijos, Trackserver'is reikalauja atskiro slaptažodžio TrackMe "
+"trasavimui online. Saugumo sumetimai mes nebenaudojame WordPress "
+"slaptažodžio. Prieigos raktas yra unikalus jūsų naudotojo paskyrai ir jis "
+"gali būti nustatytas %1$s. Dabartinis TrackMe slaptažodis yra: %2$s. Jį "
+"turite įrašyti slaptažodžio laukelyje TrackMe nustatymuose!!"
+
+#: trackserver.php:921
+msgid ""
+"if you just upgraded to version 1.9 or higher and you have been using "
+"Trackserver with TrackMe, you should update the password in TrackMe to match "
+"the password in your profile. Trackserver does not check your WordPress "
+"password anymore, because the way TrackMe uses your password is not "
+"sufficiently secure."
+msgstr ""
+"Jei atsinaujinote į 1.9 ar aukštesnė versiją ir naudojote Trackserver'į su "
+"TrackMe, turėtumėte atnaujinti TrackMe slaptažodį, kad sutaptų su "
+"slaptažodžių jūsų profilyje. Trackserver'is nebetikrina jūsų WordPress "
+"slaptažodžio nes TrackMe slaptažodžių naudojimo būdas yra nepakankamai "
+"saugus."
+
+#: trackserver.php:943
+msgid "The URL slug for MapMyTracks, used in 'Custom Url' setting in OruxMaps"
+msgstr ""
+"URL adreso dalis (slug) skirta MapMyTracks, naudojama OruxMaps 'Custom Url' "
+"nustatyme"
+
+#: trackserver.php:944 trackserver.php:3820
+msgid "Full custom URL"
+msgstr "Pilnas URL"
+
+#: trackserver.php:948
+#, php-format
+msgid ""
+"Note about HTTPS: older versions of %1$s may or may not support %3$s for "
+"HTTPS connections. As of v%2$s, SNI is verified to work. If your WordPress "
+"depends on SNI for HTTPS connections and you cannot use the latest version "
+"of %1$s, please use HTTP. This is a problem with %1$s that Trackserver "
+"cannot fix."
+msgstr ""
+"Pastaba dėl HTTPS: %1$s v%2$s nepalaiko %3$s HTTPS ryšiui. Jei jūsų "
+"WordPress veikia per HTTPS ir yra priklausomas nuo SNI, prašome naudoti "
+"HTTP. %1$s yra problematiškas ir Trackserver negali to ištaisyti."
+
+#: trackserver.php:967
+msgid "The URL slug for OsmAnd, used in 'Online tracking' settings in OsmAnd"
+msgstr ""
+"URL adreso dalis (slug) naudojama  OsmAnd 'Online tracking' nustatymuose"
+
+#: trackserver.php:985
+#, php-format
+msgid ""
+"Trackserver needs an access key for online tracking with OsmAnd. We do not "
+"use WordPress password here for security reasons. Since version 1.9 of "
+"Trackserver, the access key is unique to your user account and it can be "
+"configured in %1$s."
+msgstr ""
+"Prieigos raktas (access key) OsmAnd online trasavimui. Mes nenaudojame "
+"WordPress slaptažodžio saugumo sumetimais. Nuo 1.9 Trackserver'io versijos "
+"prieigos raktas yra unikalus jūsų naudotojo paskyrai ir gali būti nustatytas "
+"čia: %1$s."
+
+#: trackserver.php:994
+#, php-format
+msgid ""
+"if you just upgraded to version 1.9 or higher, the OsmAnd access key has "
+"been reset to a new random value. Your old key is no longer valid. If you "
+"use Trackserver with OsmAnd, please make sure the key matches your settings "
+"in OsmAnd. Your current access key is: %1$s. Change it regularly. You can "
+"find the full tracking URL in your Trackserver profile."
+msgstr ""
+"jei atsinaujinote į 1.9 ar aukštesnė versiją OsmAnd prieigos raktui (access "
+"key) buvo priskirta nauja atsitiktinė reikšmė. Senasis raktas nebegalioja. "
+"Jei Trackserver'į su OsmAnd prašome įsitikinti, kad šis nustatymas sutampa. "
+"Dabartinė prieigos rakto reikšmė yra: %1$s. keiskite jį periodiškai. Pilną "
+"trasavimo adresą (URL) rasite savo Trackserver profilyje."
+
+#: trackserver.php:1005 trackserver.php:1048 trackserver.php:1093
+msgid "http://php.net/manual/en/function.strftime.php"
+msgstr "http://php.net/manual/en/function.strftime.php"
+
+#: trackserver.php:1018
+#, php-format
+msgid ""
+"Generated track name in %1$s format. OsmAnd online tracking does not support "
+"the concept of 'tracks', there are only locations.  Trackserver needs to "
+"group these in tracks and automatically generates new tracks based on the "
+"location's timestamp. The format to use (and thus, how often to start a new "
+"track) can be specified here.  If you specify a constant string, without any "
+"strftime() format placeholders, one and the same track will be used forever "
+"and all locations."
+msgstr ""
+"Sukurtas trasos pavadinimas yra %1$s formato. OsmAnd online trasavimas "
+"nepalaiko trasų ('tracks') koncepcijos, tai tiesiog tik padėties taškai "
+"(locations).  Trackserver'is juos grupuoja į trasas ir vadovaudamasis laiko "
+"žyme automatiškai sukuria naujas trasas. Formatas (ir kaip dažnai nauja "
+"trasa prasideda) gali būti nustatytas čia. Jei nurodysite pastovų tekstą be "
+"strftime() formato vietaženklių (placeholders), vėl ir vėl bus naudojama "
+"viena ir ta pati trasa."
+
+#: trackserver.php:1025 trackserver.php:1068 trackserver.php:1113
+msgid "year"
+msgstr "metai"
+
+#: trackserver.php:1026 trackserver.php:1069 trackserver.php:1114
+msgid "month"
+msgstr "mėnuo"
+
+#: trackserver.php:1027 trackserver.php:1070 trackserver.php:1115
+msgid "day"
+msgstr "diena"
+
+#: trackserver.php:1028 trackserver.php:1071 trackserver.php:1116
+msgid "hour"
+msgstr "valanda"
+
+#: trackserver.php:1042
+msgid "The URL slug for SendLocation, used in SendLocation's settings"
+msgstr ""
+"URL adreso dalis (slug) skirta SendLocation, naudojama SendLocation "
+"nustatymuose"
+
+#: trackserver.php:1061
+#, php-format
+msgid ""
+"Generated track name in %1$s format. SendLocation online tracking does not "
+"support the concept of 'tracks', there are only locations.  Trackserver "
+"needs to group these in tracks and automatically generates new tracks based "
+"on the location's timestamp. The format to use (and thus, how often to start "
+"a new track) can be specified here.  If you specify a constant string, "
+"without any strftime() format placeholders, one and the same track will be "
+"used forever and all locations."
+msgstr ""
+"Sukurtas trasos pavadinimas yra %1$s formato. SendLocation online trasavimas "
+"nepalaiko trasų ('tracks') koncepcijos, tai tiesiog tik padėties taškai "
+"(locations).  Trackserver'is juos grupuoja į trasas ir vadovaudamasis laiko "
+"žyme automatiškai sukuria naujas trasas. Formatas (ir kaip dažnai nauja "
+"trasa prasideda) gali būti nustatytas čia. Jei nurodysite pastovų tekstą be "
+"strftime() formato vietaženklių (placeholders), vėl ir vėl bus naudojama "
+"viena ir ta pati trasa."
+
+#: trackserver.php:1086
+msgid "The URL slug for OwnTracks, used in OwnTracks' settings"
+msgstr ""
+"URL adreso dalis (slug) naudojama  OwnTracks 'Online tracking' nustatymuose"
+
+#: trackserver.php:1087
+msgid "Preferences -> Connection -> Host"
+msgstr "Nuostatos  -> Ryšys -> Pagrindinis kompiuteris (host)"
+
+#: trackserver.php:1106
+#, php-format
+msgid ""
+"Generated track name in %1$s format. OwnTracks online tracking does not "
+"support the concept of 'tracks', there are only locations.  Trackserver "
+"needs to group these in tracks and automatically generates new tracks based "
+"on the location's timestamp. The format to use (and thus, how often to start "
+"a new track) can be specified here.  If you specify a constant string, "
+"without any strftime() format placeholders, one and the same track will be "
+"used forever and all locations."
+msgstr ""
+"Sukurtas trasos pavadinimas yra %1$s formato. OwnTracks online trasavimas "
+"nepalaiko trasų ('tracks') koncepcijos, tai tiesiog tik padėties taškai "
+"(locations).  Trackserver'is juos grupuoja į trasas ir vadovaudamasis laiko "
+"žyme automatiškai sukuria naujas trasas. Formatas (ir kaip dažnai nauja "
+"trasa prasideda) gali būti nustatytas čia. Jei nurodysite pastovų tekstą be "
+"strftime() formato vietaženklių (placeholders), vėl ir vėl bus naudojama "
+"viena ir ta pati trasa."
+
+#: trackserver.php:1132
+msgid "The URL slug for upload via HTTP POST"
+msgstr "URL adreso dalis (slug) įkėlimui HTTP POST metodu"
+
+#: trackserver.php:1133 trackserver.php:3845
+msgid "Full URL"
+msgstr "Pilnas adresas (URL)"
+
+#: trackserver.php:1179
+msgid "OsmAnd online tracking settings"
+msgstr "OsmAnd online trasavimo nustatymai"
+
+#: trackserver.php:1180
+msgid "SendLocation settings"
+msgstr "SendLocation nustatymai"
+
+#: trackserver.php:1181
+msgid "OwnTracks settings"
+msgstr "OwnTracks nustatymai"
+
+#: trackserver.php:1182
+msgid "HTTP upload settings"
+msgstr "HTTP įkėlimo nustatymai"
+
+#: trackserver.php:1183
+msgid "Shortcode / map settings"
+msgstr "Trumpojo kodo (shortcode) / žemėlapio nustatymai"
+
+#: trackserver.php:1184
+msgid "Advanced settings"
+msgstr "Išplėstiniai nustatymai"
+
+#: trackserver.php:1188
+msgid "TrackMe URL slug"
+msgstr "TrackMe URL slug"
+
+#: trackserver.php:1192
+msgid "TrackMe server extension"
+msgstr "TrackMe serverio plėtinys"
+
+#: trackserver.php:1196 trackserver.php:3740
+msgid "TrackMe password"
+msgstr "TrackMe slaptažodis"
+
+#: trackserver.php:1202
+msgid "MapMyTracks URL slug"
+msgstr "MapMyTracks URL slug"
+
+#: trackserver.php:1208
+msgid "OsmAnd URL slug"
+msgstr "OsmAnd URL slug"
+
+#: trackserver.php:1212 trackserver.php:3760
+msgid "OsmAnd access key"
+msgstr "OsmAnd prieigos raktas (access key)"
+
+#: trackserver.php:1216
+msgid "OsmAnd trackname format"
+msgstr "OsmAnd trasos pavadinimo formatas"
+
+#: trackserver.php:1222
+msgid "SendLocation URL slug"
+msgstr "SendLocation URL slug"
+
+#: trackserver.php:1226
+msgid "SendLocation trackname format"
+msgstr "SendLocation trasos pavadinimo ormatas"
+
+#: trackserver.php:1232
+msgid "OwnTracks URL slug"
+msgstr "OwnTracks URL slug"
+
+#: trackserver.php:1236
+msgid "OwnTracks trackname format"
+msgstr "OwnTracks trasos pavadinimo formatas"
+
+#: trackserver.php:1242
+msgid "HTTP POST URL slug"
+msgstr "HTTP POST URL slug"
+
+#: trackserver.php:1248
+msgid "OSM/Google tile server URL"
+msgstr "OSM/Google kvadratų (tile) serverio URL"
+
+#: trackserver.php:1252
+msgid "Tile attribution"
+msgstr "Kvadratų (tile) priskyrimas"
+
+#: trackserver.php:1258
+msgid "Gettrack URL slug"
+msgstr "Gettrack URL slug"
+
+#: trackserver.php:1262
+msgid "Enable proxy"
+msgstr "Įjungti įgaliotąjš serverį (proxy)"
+
+#: trackserver.php:1274
+msgid "Trackserver"
+msgstr "Trackserver"
+
+#: trackserver.php:1281
+msgid "Options"
+msgstr "Nuostatos"
+
+#: trackserver.php:1285 trackserver.php:1286 trackserver.php:3713
+msgid "Manage tracks"
+msgstr "Tvarkyti trasas"
+
+#: trackserver.php:1290 trackserver.php:1291
+msgid "Your profile"
+msgstr "Jūsų profilis"
+
+#: trackserver.php:3059
+#, php-format
+msgid "File '%1$s': imported %2$s points from %3$s track(s) in %4$s seconds."
+msgstr ""
+"Failas '%1$s': importuoti %2$s taškai (-ų) iš %3$s trasos(-ų) per %4$s "
+"sekundes."
+
+#: trackserver.php:3069
+#, php-format
+msgid "ERROR: File '%1$s' could not be validated as GPX 1.1"
+msgstr "KLAIDA: failas '%1$s' neatitinka GPX 1.1 schemos"
+
+#: trackserver.php:3073
+#, php-format
+msgid "ERROR: Upload '%1$s' failed"
+msgstr "KLAIDA: '%1$s' įkėlimas nepavyko"
+
+#: trackserver.php:3076
+#, php-format
+msgid "ERROR: Only .gpx files accepted; discarding '%1$s'"
+msgstr "KLAIDA: priimami tik .gpx tipo failai; '%1$s' atmestas"
+
+#: trackserver.php:3674
+msgid ""
+"Merge all points of multiple tracks into one track. Please specify the name "
+"for the merged track."
+msgstr ""
+"Apjungti visus kelių trasų taškus į vieną trasą. Nurodykite naujos trasos "
+"pavadinimą."
+
+#: trackserver.php:3679
+msgid "Merged track name"
+msgstr "Apjungtos trasos pavadinimas"
+
+#: trackserver.php:3684
+msgid "Warning: this action cannot be undone!"
+msgstr "Perspėjimas: šis veiksmas negalės būti anuliuotas!"
+
+#: trackserver.php:3698
+msgid "Select files"
+msgstr "Pasirinkite failus"
+
+#: trackserver.php:3700
+msgid "Upload"
+msgstr "Įkelti"
+
+#: trackserver.php:3704
+msgid "Selected files"
+msgstr "Pasirinkti failai"
+
+#: trackserver.php:3731
+msgid "Trackserver profile"
+msgstr "Trackserver profilis"
+
+#: trackserver.php:3750
+msgid "MapMyTracks profile"
+msgstr "MapMyTracks profilis"
+
+#: trackserver.php:3770
+msgid "SendLocation access key"
+msgstr "SendLocation prieigos raktas (access key)"
+
+#: trackserver.php:3780
+msgid "Shortcode infobar template"
+msgstr "Žemėlapio informacinės juostos šablonas"
+
+#: trackserver.php:3790
+msgid "Geofencing"
+msgstr "Virtualus perimetras (geofencing)"
+
+#: trackserver.php:3800
+msgid "Update profile"
+msgstr "Atnaujinti profilį"
+
+#: trackserver.php:3842
+msgid ""
+"An access key for online tracking. We do not use WordPress password here for "
+"security reasons. The key should be added, together with your WordPress "
+"username, as a URL parameter to the online tracking URL set in OsmAnd, as "
+"displayed below. Change this regularly."
+msgstr ""
+"Online trasavimo prieigos raktas (access key). Saugumo sumetimais mes "
+"nenaudojame WordPress slaptažodžio. Raktas turi būti pridėtas kartu su jūsų "
+"WordPress naudotojo vardu (username) kaip adreso (URL) parametras.  OsmAnd "
+"'online tracking URL' nustatymas turi  būti toks, kaip parodyta žemiau. "
+"Keiskite jį periodiškai."
+
+#: trackserver.php:3869
+msgid ""
+"An access key for online tracking. We do not use WordPress password here for "
+"security reasons. The key should be added, together with your WordPress "
+"username, as a URL component in the tracking URL set in SendLocation, as "
+"displayed below. Change this regularly."
+msgstr ""
+"Online trasavimo prieigos raktas (access key). Saugumo sumetimais mes "
+"nenaudojame WordPress slaptažodžio. Raktas turi būti pridėtas kartu su jūsų "
+"WordPress naudotojo vardu (username) kaip adreso (URL) parametras.  "
+"SendLocation 'tracking URL' nustatymas turi  būti toks, kaip parodyta "
+"žemiau. Keiskite jį periodiškai."
+
+#: trackserver.php:3872
+msgid "Your personal server and script"
+msgstr "Jūsų asmeninis adresas"
+
+#: trackserver.php:3895
+msgid ""
+"A password for online tracking. We do not use WordPress password here for "
+"security reasons. Change this regularly."
+msgstr ""
+"Online trasavimo slaptažodis. Saugumo sumetimais mes nenaudojame WordPress "
+"slaptažodžio. Keiskite jį periodiškai."
+
+#: trackserver.php:3896
+msgid "URL header"
+msgstr "URL"
+
+#: trackserver.php:3897
+msgid "Server extension"
+msgstr "Serverio plėtinys (extension)"
+
+#: trackserver.php:3914
+msgid ""
+"With live tracking, an information bar can be shown on the map, displaying "
+"some data from the latest trackpoint. Here you can format the content of the "
+"infobar. Possible replacement tags are {lat}, {lon}, {timestamp}, "
+"{altitude}, {speedms}, {speedkmh}, {speedmph}, {userid}, {userlogin}, "
+"{displayname}."
+msgstr ""
+"Trasuojant realiu laiku žemėlapyje gali būti rodoma informacinė juosta, "
+"atvaizduojanti kai kuriuos paskutinio taško požymius. Čia galite nustatyti "
+"informacinės juostos turinį. Galimos automatinės žymos yra {lat}, {lon}, "
+"{timestamp}, {altitude}, {speedms}, {speedkmh}, {speedmph}, {userid}, "
+"{userlogin}, {displayname}."
+
+#: trackserver.php:3943
+msgid "Hide"
+msgstr "Paslėpti"
+
+#: trackserver.php:3952
+msgid ""
+"Track updates that fall within the specified radius (in meters) from the "
+"center point, will be marked as hidden or discarded, depending on the "
+"specified action. Modify the \"0, 0, 0\" entry to add a new fence. Set the "
+"values to \"0, 0, 0, Hide\" to delete an entry. The center point coordinates "
+"should be specified in decimal degrees. A radius of 0 will disable the "
+"fence. Use the link below to view existing geofences. You can also click the "
+"map to pick the center coordinates for a new fence. Remember to set a radius "
+"and update your profile afterwards."
+msgstr ""
+"Priklausomai nuo nurodyto veiksmo trasos atnaujinimai patenkantys į "
+"nustatytą spindulį (metrais) bus pažymėti kaip paslėpti ar išmesti. "
+"Pakeiskite \"0, 0, 0\" įrašą, kad pridėtumėte naują virtualų perimetrą.  "
+"Priskirkite \"0, 0, 0, Hide\" reikšmę įrašo pašalinimui. Centrinio taško "
+"koordinatės turėtų būti nurodytos dešimtainiais laipsniais. Nulinės vertės "
+"spindulys išjungs perimetrą. Pasinaudokite nuoroda apačioje esančių "
+"perimetrų peržiūrai. Naujo perimetro centrinio taško pasirinkimui galite  "
+"spustelėti žemėlapyje. Nepamirškite nustatyti spindulio ir atnaujinti savo "
+"profilio."
+
+#: trackserver.php:3980
+msgid "Center latitude"
+msgstr "Centruoti platumą"
+
+#: trackserver.php:3983
+msgid "Longitude"
+msgstr "Ilguma"
+
+#: trackserver.php:3986
+msgid "Radius"
+msgstr "Spindulys"
+
+#: trackserver.php:3989
+msgid "Action"
+msgstr "Veiksmas"
+
+#: trackserver.php:3996
+msgid "View geofences"
+msgstr "Rodyti virtualius perimetrus"
+
+#: trackserver.php:4000
+msgid ""
+"It seems you have made changes to the geofences. Don't forget to update your "
+"profile!"
+msgstr ""
+"Panašu, kad atlikote pakeitimus virtualiam perimetrui. Nepamirškite "
+"atnaujinti savo profilį!"
+
+#: trackserver.php:4050
+msgid "It seems you have insufficient permissions to manage track ID "
+msgstr "Nepakanka teisių valdyti trasos ID"
+
+#: trackserver.php:4228
+msgid "Profile updated"
+msgstr "Profilis išsaugotas"
+
+#: trackserver.php:4230
+msgid "ERROR: could not update user profile"
+msgstr "KLAIDA: nepavyko atnaujinti profilio nustatymų"
+
+#: trackserver.php:4350
+#, php-format
+msgid "Deleted %1$d location(s) in %2$d track(s)."
+msgstr "Ištrinta %1$d taškų(-ai) %2$d trasoje(-se)."
+
+#: trackserver.php:4353
+msgid "No tracks deleted"
+msgstr "Nė viena trasa neištrinta"
+
+#: trackserver.php:4382
+#, php-format
+msgid "Merged %1$d location(s) from %2$d track(s) into '%3$s'."
+msgstr "%1$d taškai(-ų) iš %2$d trasų(-os) apjungti į '%3$s'."
+
+#: trackserver.php:4385
+msgid "Need >= 2 tracks to merge, got only %1\\$d"
+msgstr "Apjungimui reikia ne mažiau dviejų trasų, pateikta tik %1$d"
+
+#: trackserver.php:4412
+#, php-format
+msgid "Recalculated track stats for %1$d track(s) in %2$d seconds"
+msgstr "%1$d trasa(-os) perskaičiuota per %2$d sekundes"
+
+#: trackserver.php:4415
+msgid "No tracks found to recalculate"
+msgstr "Nėra trasų perskaičiavimui"
